@@ -39,9 +39,9 @@ class App extends Component {
       <div className="App">
         <h1>Derp</h1>
         <p>Testing...</p>
-        <button onClick={this.switchNameHandler.bind(this,"Ann")}>Switch Name</button>
+        <button onClick={()=>this.switchNameHandler("Ann")}>Switch Name</button>
         <Person name={this.state.persons[this.state.counter].name} age={this.state.persons[this.state.counter].age} />
-        <Person name={this.state.persons[1].name} age={this.state.persons[1].age} click={this.switchNameHandler}>Hobby: Racing</Person>
+        <Person name={this.state.persons[1].name} age={this.state.persons[1].age} click={this.switchNameHandler.bind(this,"Max!")}>Hobby: Racing</Person>
         <Person name={this.state.persons[2].name} age={this.state.persons[2].age} />
 
       </div>
