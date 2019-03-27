@@ -15,17 +15,18 @@ class App extends Component {
 
   switchNameHandler = (newName) => {
     console.log("Handler triggered")
-    // var temp=this.state.counter;
-    // if(temp===2){
-    //   temp=0;
-    // }
-    // else{
-    //   temp+=1;
-    // }
+    var temp=this.state.counter;
+    if(temp===2){
+      temp=0;
+    }
+    else{
+      temp+=1;
+    }
     // this.setState({
     //   counter:temp
     // })
     this.setState({
+      counter:temp,
       persons: [
         { name: newName, age: 24 },
         { name: "Jill", age: 11 },
